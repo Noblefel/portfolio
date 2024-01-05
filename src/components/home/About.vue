@@ -53,6 +53,9 @@
             <div>
               <img src="@/assets/images/profile.JPG" class="profile" />
             </div>
+            <div>
+              
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <nav class="center">
     <div class="row responsive">
-      <div class=""></div>
+      <div></div>
       <div class="middle-align">
         <TheThemeSwitch />
       </div>
@@ -9,6 +9,7 @@
       <RouterLink to="/projects" :class="linkClass('projects')">Projects</RouterLink>
       <RouterLink to="/contact" :class="linkClass('contact')">Contact</RouterLink>
       <RouterLink to="/blog" :class="linkClass('blog')">Blog</RouterLink>
+      <div>&nbsp;</div>
     </div>
   </nav>
 </template>

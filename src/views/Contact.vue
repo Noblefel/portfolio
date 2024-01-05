@@ -17,8 +17,16 @@
             <img src="@/assets/images/github.png" alt="" />
             <h6>Noblefel</h6>
           </a>
+          <a
+            href="https://www.linkedin.com/in/abdullah-jibran/"
+            target="_blank"
+            class="s6 m4 l3 card surface"
+          >
+            <img src="@/assets/images/linkedin.png" alt="" />
+            <h6>abdullah-jibran</h6>
+          </a>
         </div>
-      </div> 
+      </div>
     </section>
 
     <div class="divider"></div>
@@ -39,17 +47,12 @@ section.contact {
     flex-direction: column;
 
     img {
-      width: clamp(4rem, calc(3rem + 5vw), 7rem);
-      padding: 0.3rem;
-
-      &:nth-child(1) {
-        border-radius: 50%;
-        background-color: var(--on-background);
-      }
+      width: clamp(4rem, calc(3rem + 5vw), 7rem); 
+      background-color: var(--on-background);
     }
 
     h6 {
-      font-size: clamp(1.2rem, calc(0.2rem + 2.5vw), 1.7rem);
+      font-size: clamp(1rem, calc(0.2rem + 2.5vw), 1.4rem);
     }
   }
 }
