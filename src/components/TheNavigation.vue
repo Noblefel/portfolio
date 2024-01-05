@@ -5,22 +5,24 @@
       <div class="middle-align">
         <TheThemeSwitch />
       </div>
-      <RouterLink to="/" :class="linkClass('home')">Home & About Me</RouterLink>
-      <RouterLink to="/projects" :class="linkClass('projects')">Projects</RouterLink>
-      <RouterLink to="/contact" :class="linkClass('contact')">Contact</RouterLink>
-      <RouterLink to="/blog" :class="linkClass('blog')">Blog</RouterLink>
+      <a @click="setView('home')" :class="linkClass('home')">Home & About Me</a>
+      <a @click="setView('projects')" :class="linkClass('projects')">Projects</a>
+      <a @click="setView('contact')" :class="linkClass('contact')">Contact</a>
+      <a @click="setView('blog')" :class="linkClass('blog')">Blog</a>
       <div>&nbsp;</div>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
-import TheThemeSwitch from "./TheThemeSwitch.vue";
-import { RouterLink, useRoute } from "vue-router";
-const route = useRoute()
+import TheThemeSwitch from "./TheThemeSwitch.vue"; 
+import { inject, type Ref, ref } from "vue";
+
+const currentView: Ref = inject("currentView", ref())
+const setView: Function = inject("setView", () => {})
 
 const linkClass = (name: string) => {
-  if (route.name == name) {
+  if (currentView.value == name) {
     return "active no-wave"
   }
   return "no-wave"
