@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <a href="" class="button secondary">
+        <a href="https://github.com/Noblefel/Portfolio" target="_blank" class="button secondary">
             Source
             <i>open_in_new</i>
         </a>

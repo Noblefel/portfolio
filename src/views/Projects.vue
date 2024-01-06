@@ -11,12 +11,11 @@
       <div class="wrapper">
         <div class="grid">
           <div class="s12 m6 l6 card" v-for="project in projects">
-            <img
-              :src="`src/assets/images/${project.image}`"
-              :alt="project.title"
-            />
+            <img :src="project.image" :alt="project.title" />
             <div class="desc">
-              <a :href="project.link" target="_blank" class="wrap"> {{ project.title }} <i>open_in_new</i> </a>
+              <a :href="project.link" target="_blank" class="wrap">
+                {{ project.title }} <i>open_in_new</i>
+              </a>
               <p>{{ project.desc }}</p>
             </div>
             <div class="row wrap">
@@ -34,27 +33,39 @@
 <script setup lang="ts">
 import PageHeader from "@/components/PageHeader.vue";
 
+import innOne from "@/assets/images/InnOne.jpg";
+import contactManagement from "@/assets/images/contact-management.png";
+import pendaftaranKursus from "@/assets/images/pendaftaran-kursus.png";
+import portfolio from "@/assets/images/portfolio.jpg";
+
 const projects = [
   {
+    title: "Portfolio",
+    image: portfolio,
+    desc: "My personal portfolio",
+    tags: ["Web", "Static"],
+    link: "https://github.com/Noblefel/Portfolio",
+  },
+  {
     title: "InnOne Reservations",
-    image: "InnOne.jpg",
-    desc: "Web application where user can book a room and make reservations. Featured Admin Dashboard for property owners to manage the incoming reservations",
+    image: innOne,
+    desc: "Web application where user can book a room and featuring admin dashboard for property owners to manage the incoming reservations",
     tags: ["Web", "Multi-page-app"],
     link: "https://github.com/Noblefel/InnOne-bookings-web-app",
   },
   {
     title: "Contact Management API",
-    image: "contact-management.png",
+    image: contactManagement,
     desc: "Small scale rest api to create and manage contacts, with simple JWT authentication and Admin guard.",
     tags: ["API"],
-    link: "https://github.com/Noblefel/Rest-Api-Managemen-Kontak"
+    link: "https://github.com/Noblefel/Rest-Api-Managemen-Kontak",
   },
   {
     title: "Simulasi Pendaftaran Kursus",
-    image: "pendaftaran-kursus.png",
+    image: pendaftaranKursus,
     desc: "Proyek penilaian akhir semester matkul Dasar Pemrograman. Dibuat menggunakan Python.",
     tags: ["Terminal"],
-    link: "https://github.com/Noblefel/Simulasi-Pendaftaran-Kursus"
+    link: "https://github.com/Noblefel/Simulasi-Pendaftaran-Kursus",
   },
 ];
 </script>
@@ -73,7 +84,7 @@ const projects = [
 
   img {
     width: 100%;
-    height: 200px;
+    height: clamp(150px, calc(120px + 8vw), 220px);
     object-fit: cover;
   }
 
@@ -83,7 +94,7 @@ const projects = [
     font-weight: 500;
     opacity: 0.9;
 
-    a { 
+    a {
       font-weight: 700;
       transition: 0.2s all ease-in;
       font-size: clamp(1.5rem, calc(0.5rem + 2vw), 1.6rem);
