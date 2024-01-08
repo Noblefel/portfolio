@@ -32,13 +32,20 @@
 
 <script setup lang="ts">
 import PageHeader from "@/components/PageHeader.vue";
-
 import innOne from "@/assets/images/InnOne.jpg";
 import contactManagement from "@/assets/images/contact-management.png";
 import pendaftaranKursus from "@/assets/images/pendaftaran-kursus.png";
 import portfolio from "@/assets/images/portfolio.jpg";
+import stove from "@/assets/images/stove.jpg"
 
 const projects = [
+{
+    title: "STOVE",
+    image: stove,
+    desc: "Reads a CSV file, creates an HTML representation of the data with a styled table, and then converts it into a PDF",
+    tags: ["Tool"],
+    link: "https://github.com/Noblefel/stove",
+  },
   {
     title: "Portfolio",
     image: portfolio,
