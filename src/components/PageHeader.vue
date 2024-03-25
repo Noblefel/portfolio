@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   h: { type: String, required: true },
   sub: { type: String },
