@@ -1,53 +1,45 @@
 <template>
-  <section class="technologies surface">
-    <div class="wrapper">
-      <div class="divider centered"></div>
+  <section id="technologies">
+    <h5 class="card center wrap">
+      <span class="cyan-text">Technologies</span>
+      i mainly use 💻
+    </h5>
 
-      <h3 class="center-align">
-        <span class="cyan-text">Technologies&nbsp;</span>
-        i mainly use
-      </h3>
+    <div class="space"></div>
 
-      <div class="space"></div>
-      <div class="grid">
-        <div class="s12 m4 l4">
-          <div class="card">
-            <img src="@/assets/images/go.png" alt="Go Programming Language" />
-            <p>Go</p>
-          </div>
-        </div>
-        <div class="s12 m4 l4">
-          <div class="card">
-            <img src="@/assets/images/vue.png" alt="Vue JS Framework" />
-            <p>Vue</p>
-          </div>
-        </div>
-        <div class="s12 m4 l4">
-          <div class="card">
-            <img src="@/assets/images/postgresql.png" alt="Postgresql" />
-            <p>Postgresql</p>
-          </div>
-        </div>
-        <div class="s12 m4 l4"></div>
-      </div>
+    <div class="grid large-space">
+      <article class="s12 m6 l6 card-shadow">
+        <img src="@/assets/images/go.png" alt="Go Programming Language" />
+        <p>Go</p>
+      </article>
+      <article class="s12 m6 l6 card-shadow">
+        <img src="@/assets/images/vue.png" alt="Vue JS Framework" />
+        <p>Vue</p>
+      </article>
+      <article class="s12 m6 l6 card-shadow">
+        <img src="@/assets/images/postgresql.png" alt="Postgresql" />
+        <p>Postgresql</p>
+      </article>
     </div>
   </section>
 </template>
 
 <style scoped>
-section.technologies {
-  h3 {
-    font-size: clamp(1rem, calc(0.6rem + 4vw), 2.5rem);
-  }
-  .card {
+#technologies {
+  max-width: 700px;
+  margin: auto;
+
+  article {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    max-width: 250px;
-    margin: auto;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     gap: 1rem;
+    border-color: var(--purple);
+    filter: drop-shadow(var(--purple) 6px 6px 0);
 
     img {
       height: 100px;

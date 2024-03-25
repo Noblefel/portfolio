@@ -1,22 +1,17 @@
 <template>
-  <div>
-    <section class="blog surface">
-      <TextBlock background-color="secondary" :background-opacity="0">
-        <div class="medium-width m l"></div>
-        <p class="center-align secondary">Masih Kosong ☹️</p>
-      </TextBlock>
+  <PageHeader h="Blog 📰" sub="Masih Kosong ☹️">
+    <section id="blog">
+      
     </section>
-
-    <div class="divider"></div>
-  </div>
+  </PageHeader>
 </template>
 
 <script setup lang="ts">
-import TextBlock from "@/components/TextBlock.vue";
+import PageHeader from '@/components/PageHeader.vue';
 </script>
 
 <style scoped>
-section.blog {
-    padding: 6rem 1rem;
+#blog {
+  height: 100vh;
 }
 </style>

@@ -41,7 +41,7 @@ nav {
   z-index: 5;
   background-color: var(--surface);
   border-radius: 125px !important;
-  border: 1px solid color-mix(in srgb, var(--background), transparent 70%);
+  border: 1px solid color-mix(in srgb, var(--on-surface), transparent 50%); 
   overflow: auto;
 
   &::-webkit-scrollbar {
@@ -56,16 +56,14 @@ nav {
 
     &.active {
       background-color: var(--secondary);
-      color: var(--on-secondary);
+      color: var(--cyan);
     }
 
     &:not(.active) {
       background-color: transparent;
-      color: var(--on-surface);
-      transition: 0.2s all ease-in;
 
       &:hover {
-        color: var(--on-secondary);
+        color: var(--cyan);
       }
     }
   }

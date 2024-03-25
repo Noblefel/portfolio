@@ -1,69 +1,30 @@
 :root {
   body {
     min-height: 100vh;
-    background-color: var(--background); 
-    color: var(--on-background);
+    background-color: var(--background);
     line-height: 1.6;
     font-family: DMSans;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
+    -moz-osx-font-smoothing: grayscale;
 
-    --font: DMSans; 
-    
-    &.light {
-      --primary: #46abbd;
-      --secondary: #d8edf0;
-      --surface: #ffffff;
-      --background: #25303a; 
-      --on-surface: #272727e8;
-      --on-background: #ffffffef;
+    --cyan: #46abbd;
+    --cyan-light: #d8edf0;
+    --purple: rgb(185, 147, 229);
+    --blue-dark: #25303a;
+
+    &.light { 
+      --secondary: var(--cyan-light);
       --on-secondary: var(--primary);
-    } 
+    }
 
     &.dark {
-      --primary: #245f69; 
-      --secondary: #25303a;
-      --surface: rgb(8, 9, 14); 
-      --background: #10151a; 
-      --on-primary: var(--on-surface);
+      --primary: var(--blue-dark);
+      --secondary: var(--blue-dark);
+      --surface: rgb(8, 9, 14);
+      --background: #10151a;
+      --on-primary: white;
       --on-surface: #dfdfdfe8; 
-      --on-secondary: #46abbd;
-    } 
-  }
-
-  & :is(button, .button)::after {
-    background-image: radial-gradient(
-      circle,
-      rgba(105, 105, 105, 0.13) 1%,
-      transparent 1%
-    );
-  }
-}
-
-button,
-.button {
-  &,
-  &.small,
-  &.large {
-    font-weight: 700;
-    border-radius: 7px !important;
-  }
-
-  &.large {
-    padding: 0.5rem 2.5rem !important;
-    font-size: 1.1rem;
-  }
-
-  &.inverted {
-    background-color: transparent;
-    color: var(--on-background);
-    border: 1px solid var(--primary);
-    transition: 0.2s all ease;
-
-    &:hover {
-      background-color: var(--primary);
-      color: var(--on-primary) !important; 
     }
   }
 }
@@ -75,6 +36,11 @@ h4,
 h5,
 h6 {
   font-weight: 700 !important;
+}
+
+h1,
+h2 {
+  font-size: clamp(1.9rem, calc(1.2rem + 1.5vw), 2.5rem) !important;
 }
 
 section {
