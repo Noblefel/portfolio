@@ -13,6 +13,8 @@
     <About />
 
     <Technologies />
+    
+    <Education />
 
     <div class="large-space"></div>
   </div>
@@ -21,5 +23,6 @@
 <script setup lang="ts">
 import PageHeader from "@/components/PageHeader.vue";
 import About from "@/components/home/About.vue";
+import Education from "@/components/home/Education.vue";
 import Technologies from "@/components/home/Technologies.vue";
 </script>

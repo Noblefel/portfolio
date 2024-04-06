@@ -1,7 +1,7 @@
 <template>
   <section id="about">
     <div class="space"></div>
-    <img src="@/assets/images/profile.JPG" class="profile center" />
+    <img src="@/assets/images/profile.jpg" class="profile center" />
     <h5 class="card-shadow center">Get to know me 📋</h5>
     <div class="space"></div>
 

@@ -29,19 +29,27 @@ import contactManagement from "@/assets/images/contact-management.png";
 import pendaftaranKursus from "@/assets/images/pendaftaran-kursus.png";
 import stove from "@/assets/images/stove.jpg";
 import manortalk from "@/assets/images/Manortalk.jpg";
+import termRPG from "@/assets/images/term-rpg.png";
 
 const projects = [
   {
+    title: "term-rpg",
+    image: termRPG,
+    desc: "A simple terminal-based RPG where you can battle against various enemies.",
+    tags: ["Terminal"],
+    link: "https://github.com/Noblefel/term-rpg",
+  },
+  {
     title: "ManorTalk",
     image: manortalk,
-    desc: "A small blog application with filters, search and pagination. This project follows the monolithic architecture",
+    desc: "Blogging app with filters, search and pagination. This project follows the monolithic architecture",
     tags: ["Web", "Full-stack"],
     link: "https://github.com/Noblefel/Manortalk",
   },
   {
     title: "STOVE",
     image: stove,
-    desc: "Reads a CSV file, then generates the formatted HTML table, and converts it into a PDF using the chromedp package.",
+    desc: "Reads a CSV file, then generates the formatted HTML table, and converts it into a PDF.",
     tags: ["Tool"],
     link: "https://github.com/Noblefel/stove",
   },

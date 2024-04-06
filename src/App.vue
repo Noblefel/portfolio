@@ -23,7 +23,6 @@ provide("currentView", currentView);
 
 onBeforeMount(() => {
   ui("mode", localStorage.getItem("mode") ?? "light");
-
   setView("home");
 });
 </script>
