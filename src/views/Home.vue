@@ -4,7 +4,7 @@
       h="Hey There 👋"
       sub="<span class='bold'>I'im Jibran</span>, 
           a student with a passion for
-          <span class='cyan-text bold'>Backend Development.</span>
+          <span class='cyan-text bold'>Coding</span>.
           Currently pursuing a degree in Information System.
       "
     >
