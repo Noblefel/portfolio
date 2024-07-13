@@ -1,13 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Jibran</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah A. Jibran | Portfolio</title>
+    <meta
+      name="description"
+      content="Halo 👋 - im Jibran, a student with a passion for Coding. Currently pursuing a degree in Information System"
+    />
+    <meta property="og:url" content="https://noblefel.github.io/portfolio" />
+    <meta property="og:title" content="Website page title" />
+    <meta
+      property="og:description"
+      content="Halo 👋 - im Jibran, a student with a passion for Coding. Currently pursuing a degree in Information System"
+    />
+    <meta property="og:site_name" content="Abdullah A. Jibran Portfolio" />
+    <meta property="og:image" content="./images/og.png" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
   </head>
   <body class="light">
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="layout">
+      <div>
+        <nav class="desktop">
+          <button class="toggle">
+            <i class="material-symbols-outlined">dark_mode</i>
+          </button>
+          <button data-nav="about" class="active">
+            <i class="material-symbols-outlined">account_circle</i>
+            <span>About me</span>
+          </button>
+          <button data-nav="projects">
+            <i class="material-symbols-outlined">terminal</i>
+            Projects
+          </button>
+          <button data-nav="contact">
+            <i class="material-symbols-outlined">contacts</i>
+            Contact
+          </button>
+        </nav>
+      </div>
+
+      <nav class="mobile">
+        <div class="flex">
+          <button data-nav="about" class="active">
+            <i class="material-symbols-outlined">account_circle</i>
+            <span>About me</span>
+          </button>
+          <button data-nav="projects">
+            <i class="material-symbols-outlined">terminal</i>
+            Projects
+          </button>
+          <button data-nav="contact">
+            <i class="material-symbols-outlined">contacts</i>
+            Contact
+          </button>
+          <button class="toggle">
+            <i class="material-symbols-outlined">dark_mode</i>
+          </button>
+        </div>
+      </nav>
+
+      <main id="about">
+        <h1 style="text-align: center">Halo 👋</h1>
+
+        <div class="hero">
+          <div>
+            <img src="./images/profile.jpg" alt="profile avatar" width="200px" />
+            <span>👑</span>
+          </div>
+          <p>
+            im Jibran, a student with a passion for Coding. Currently pursuing a
+            degree in Information System
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>Know my history 📓</h2>
+        <article class="history">
+          <p>
+            Before coding, i could not find anything that can be of interest to
+            me, everything just doesnt "click". Until i came across this
+            <a href="https://www.freecodecamp.org/" target="_blank">site</a>...
+            and the rest is history.
+          </p>
+
+          <p>
+            My other learning source is
+            <a href="https://udemy.com" target="_blank">Udemy</a>, a great
+            platform when i was starting out. But still, back then i was
+            skeptical if this was a right path for me but slowly but surely i
+            found it was a good fit and besides, its just really really
+            enjoyable.
+          </p>
+
+          <br />
+          <b># Tidbits</b>
+          <ul>
+            <li>
+              learnt how to code by <b>doing</b> (theory never worked with me)
+            </li>
+            <li>firm believer of the <b>KISS</b> principle</li>
+            <li>trying to get used to <b>Test-Driven Development</b></li>
+          </ul>
+        </article>
+
+        <h2>Education 🏫</h2>
+        <article class="education">
+          <i class="material-symbols-outlined">construction</i>
+          <p>To be added</p>
+        </article>
+
+        <h2>Technologies i <span style="color: steelblue">mainly</span> use</h2>
+        <div class="technologies">
+          <article>
+            <img src="./images/go.png" alt="Go programming language logo" />
+            <p>Go</p>
+            <span>❤️</span>
+          </article>
+          <article>
+            <img src="./images/postgresql.png" alt="Postgresql database logo" />
+            <p>Postgresql</p>
+          </article>
+        </div>
+
+        <h2>
+          Technologies i <span style="color: darkorchid">want</span> to learn
+        </h2>
+        <div class="technologies-wishlist">
+          <article>
+            <img
+              src="./images/scala.png"
+              alt="Scala programming language logo"
+            />
+            <p>Scala</p>
+          </article>
+          <article>
+            <img src="./images/docker.png" alt="Docker logo" />
+            <p>Docker</p>
+          </article>
+          <article>
+            <img
+              src="./images/kotlin.png"
+              alt="Kotlin programming language logo"
+            />
+            <p>Kotlin</p>
+          </article>
+        </div>
+      </main>
+
+      <main id="projects">
+        <h1 style="text-align: center">My Projects 📁</h1>
+        <div class="divider"></div>
+
+        <div class="grid">
+          <article>
+            <img
+              src="./images/term-rpg.png"
+              alt="terminal screenshot of the game showing player's and enemy's hp during battle"
+            />
+            <a href="https://github.com/Noblefel/term-rpg" target="_blank">
+              <h1>term-rpg</h1>
+            </a>
+            <p>Simple terminal rpg game</p>
+            <div class="tags">
+              <span>Terminal</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/Manortalk.jpg"
+              alt="screenshot of web app showing the search page and list of all the posts found"
+            />
+            <a href="https://github.com/Noblefel/Manortalk" target="_blank">
+              <h1>ManorTalk</h1>
+            </a>
+            <p>
+              Blogging app include filters, search and pagination through
+              RestAPI
+            </p>
+            <div class="tags">
+              <span>Web</span>
+              <span>Fullstack</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/stove.jpg"
+              alt="image of a nicely formatted table in a pdf"
+            />
+            <a href="https://github.com/Noblefel/stove" target="_blank">
+              <h1>STOVE</h1>
+            </a>
+            <p>
+              Reads a CSV file, then generates the formatted HTML table, and
+              converts it into a PDF
+            </p>
+            <div class="tags">
+              <span>Tool</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/InnOne.jpg"
+              alt="screenshot of web app showing the room description and checkout section"
+            />
+            <a
+              href="https://github.com/Noblefel/InnOne-bookings-web-app"
+              target="_blank"
+            >
+              <h1>InnOne (learning)</h1>
+            </a>
+            <p>Learning go by building multi-page app</p>
+            <div class="tags">
+              <span>Web</span>
+              <span>Multi-page</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/contact-management.png"
+              alt="screenshot of formatted json response"
+            />
+            <a
+              href="https://github.com/Noblefel/Rest-Api-Managemen-Kontak"
+              target="_blank"
+            >
+              <h1>Contact API (learning)</h1>
+            </a>
+            <p>Learning go by building Restful API</p>
+            <div class="tags">
+              <span>API</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/pendaftaran-kursus.png"
+              alt="screenshot terminal di bagian menu utama simulasi"
+            />
+            <a
+              href="https://github.com/Noblefel/Simulasi-Pendaftaran-Kursus"
+              target="_blank"
+            >
+              <h1>Simulasi Pendaftaran Kursus</h1>
+            </a>
+            <p>Proyek penilaian akhir matkul dasar pemrograman</p>
+            <div class="tags">
+              <span>Terminal</span>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <main id="contact">
+        <h1 style="text-align: center">Reach out to me 😃</h1>
+        <div class="divider"></div>
+
+        <div class="grid">
+          <article>
+            <img src="./images/github.png" alt="github logo" class="circle" />
+            <a href="https://github.com/Noblefel" target="_blank">Noblefel</a>
+          </article>
+          <article>
+            <img src="./images/linkedin.png" alt="linkedin logo" />
+            <a
+              href="https://www.linkedin.com/in/abdullah-jibran/"
+              target="_blank"
+              >abdullah-jibran</a
+            >
+          </article>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <a href="https://github.com/Noblefel/portfolio" target="_blank">
+        <img src="./images/github.png" alt="github logo" width="50px" />
+      </a>
+    </footer>
   </body>
 </html>

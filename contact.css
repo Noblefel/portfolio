@@ -1,0 +1,29 @@
+#contact {
+  display: none;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 1rem;
+  }
+
+  img {
+    background-color: white;
+    display: block;
+    margin: 0 auto 1rem auto;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 2px solid white;
+    
+    &.circle {
+      border-radius: 50%;
+    }
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    font-size: clamp(1.2rem, calc(6vw), 2rem);
+  }
+}
