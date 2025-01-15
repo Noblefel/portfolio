@@ -3,10 +3,13 @@
 @import "./projects.css";
 @import "./contact.css";
 
+:root {
+  font-size: 21px;
+}
+
 body {
   height: 100vh;
   font-family: "Patrick Hand SC", "Segoe Ui";
-  font-size: 22px;
   background-size: 20px 40px;
   background-image: repeating-linear-gradient(
     0deg,
@@ -15,22 +18,22 @@ body {
     #e5e5f720 2px,
     #e5e5f720
   );
+}
 
-  &.dark {
-    --bg: rgb(17, 22, 30);
-    background-color: var(--bg);
-    background-image: unset;
-    color: rgba(255, 255, 255, 0.7);
+body.dark {
+  --bg: rgb(17, 22, 30);
+  background-color: var(--bg);
+  background-image: unset;
+  color: rgba(255, 255, 255, 0.7);
 
-    article,
-    button,
-    nav.mobile {
-      background-color: color-mix(in srgb, var(--bg), steelblue 7%) !important;
-    }
+  article,
+  button,
+  nav.mobile {
+    background-color: color-mix(in srgb, var(--bg), steelblue 7%) !important;
+  }
 
-    button:not(.active) {
-      color: rgba(255, 255, 255, 0.5) !important;
-    }
+  button:not(.active) {
+    color: rgba(255, 255, 255, 0.5) !important;
   }
 }
 
@@ -65,33 +68,30 @@ nav.desktop {
   width: fit-content;
 
   button {
-    min-height: 6rem;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     background-color: white;
     font-family: inherit;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.75px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.2s ease-in-out transform;
 
     &.active {
       border: 4px dashed steelblue;
-      font-weight: 600;
       color: steelblue;
     }
 
     &:hover:not(.active) {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transform: rotate(5deg);
     }
 
     i {
-      font-size: 3rem;
-      margin-bottom: 0.2rem;
+      font-size: 2rem;
       display: block;
     }
   }
@@ -119,8 +119,7 @@ nav.mobile {
     border: 0;
     background-color: transparent;
     font-family: inherit;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 0.85rem;
     color: rgba(0, 0, 0, 0.5);
 
     &.active {
@@ -128,14 +127,14 @@ nav.mobile {
     }
 
     i {
-      font-size: 2rem;
+      font-size: 1.4rem;
       display: block;
     }
   }
 }
 
 article {
-  padding: 1rem;
+  padding: 0.75rem;
   width: 100%;
   background-color: white;
   border: 2px solid rgba(0, 0, 0, 0.2);
@@ -143,12 +142,7 @@ article {
   box-sizing: border-box;
 }
 
-h2 {
-  margin-top: 2rem;
-}
-
 .divider {
-  margin: 2rem 0;
   border-bottom: 5px dashed;
 }
 

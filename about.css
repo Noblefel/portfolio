@@ -1,31 +1,16 @@
 #about {
   .hero {
     p {
-      font-size: 1.8rem;
+      text-wrap: pretty;
+      font-size: 1.35rem;
       text-align: center;
     }
 
-    > div {
-      max-width: 200px;
+    img {
+      border-radius: 8px;
+      object-fit: cover;
       display: block;
       margin: 0 auto 1rem auto;
-      position: relative;
-      transition: 0.2s ease-in-out translate;
-
-      img {
-        width: 100%;
-        border-radius: 8px;
-        object-fit: cover;
-      }
-
-      span {
-        position: absolute;
-        top: -1.2rem;
-        right: -1rem;
-        transform: rotate(35deg);
-        font-size: 2.2rem;
-        text-shadow: 0 0 1px black;
-      }
     }
   }
 
@@ -43,20 +28,26 @@
   }
 
   .technologies {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    gap: 1rem;
+    .main {
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      gap: 1rem;
+    }
+
+    .other {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.5rem;
+    }
 
     img {
+      margin-top: 0.5rem;
       width: 100%;
-      height: 100px;
       object-fit: contain;
     }
 
     p {
-      margin-top: 0.5rem;
       text-align: center;
-      font-size: 1.5rem;
     }
 
     article {

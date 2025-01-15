@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdullah A. Jibran | Portfolio</title>
+    <title>Abdullah A. Jibran | Portofolio</title>
     <meta
       name="description"
       content="Halo 👋 - im Jibran, a student with a passion for Coding. Currently pursuing a degree in Information System"
     />
     <meta property="og:url" content="https://noblefel.github.io/portfolio" />
-    <meta property="og:title" content="Abdullah A. Jibran Portfolio" />
+    <meta property="og:title" content="Abdullah A. Jibran Portofolio" />
     <meta
       property="og:description"
       content="Halo 👋 - im Jibran, a student with a passion for Coding. Currently pursuing a degree in Information System"
     />
-    <meta property="og:site_name" content="Abdullah A. Jibran Portfolio" />
+    <meta property="og:site_name" content="Abdullah A. Jibran Portofolio" />
     <meta
       property="og:image"
       content="https://noblefel.github.io/portfolio/images/og.PNG"
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="preconnect"
-      href="https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC&display=swap"
+      href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap"
     />
     <link
       rel="stylesheet"
@@ -77,14 +77,7 @@
         <h1 style="text-align: center">Halo 👋</h1>
 
         <div class="hero">
-          <div>
-            <img
-              src="./images/profile.jpg"
-              alt="profile avatar"
-              width="200px"
-            />
-            <span>👑</span>
-          </div>
+          <img src="./images/profile.jpg" alt="profile avatar" width="200px" />
           <p>Abdullah A. Jibran, mahasiswa Sistem Informasi</p>
         </div>
 
@@ -116,15 +109,76 @@
 
         <h2><span style="color: steelblue">Teknologi</span> yang dipakai</h2>
         <div class="technologies">
-          <article>
-            <img src="./images/go.png" alt="Go programming language logo" />
-            <p>Go</p>
-            <span>❤️</span>
-          </article>
-          <article>
-            <img src="./images/postgresql.png" alt="Postgresql database logo" />
-            <p>Postgresql</p>
-          </article>
+          <div class="main">
+            <article>
+              <img
+                src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_go_gopher_icon_130571.png"
+                alt="Go programming language logo"
+                height="100px"
+              />
+              <p>Go</p>
+              <span>❤️</span>
+            </article>
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/233px-Postgresql_elephant.svg.png"
+                alt="Postgresql database logo"
+                height="100px"
+              />
+              <p>Postgresql</p>
+            </article>
+          </div>
+          <br />
+          <div class="other">
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
+                alt="Postgresql database logo"
+                height="40px"
+              />
+              <p>Mysql</p>
+            </article>
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png"
+                alt="Javascript logo"
+                height="40px"
+              />
+              <p>JavaScript</p>
+            </article>
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/240px-Typescript_logo_2020.svg.png"
+                alt="Typescript logo"
+                height="40px"
+              />
+              <p>TypeScript</p>
+            </article>
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/320px-Node.js_logo.svg.png"
+                alt="Node js logo"
+                height="40px"
+              />
+              <p>Node JS</p>
+            </article>
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/320px-PHP-logo.svg.png"
+                alt="PHP logo"
+                height="40px"
+              />
+              <p>PHP</p>
+            </article>
+            <article>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/231px-Laravel.svg.png"
+                alt="Laravel logo"
+                height="40px"
+              />
+              <p>Laravel</p>
+            </article>
+          </div>
         </div>
 
         <h2>
@@ -133,21 +187,17 @@
         <div class="technologies-wishlist">
           <article>
             <img
-              src="./images/scala.png"
-              alt="Scala programming language logo"
+              src="https://cdn-icons-png.flaticon.com/512/6132/6132220.png"
+              alt="Scala logo"
             />
             <p>Scala</p>
           </article>
           <article>
-            <img src="./images/docker.png" alt="Docker logo" />
-            <p>Docker</p>
-          </article>
-          <article>
             <img
-              src="./images/kotlin.png"
-              alt="Kotlin programming language logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png"
+              alt="Docker logo"
             />
-            <p>Kotlin</p>
+            <p>Docker</p>
           </article>
         </div>
       </main>
@@ -155,6 +205,18 @@
       <main id="projects">
         <h1 style="text-align: center">My Projects 📁</h1>
         <div class="divider"></div>
+        <br />
+
+        <div id="filter">
+          <span class="item active"> Semua </span>
+          <span class="item"> Web </span>
+          <span class="item"> Api </span>
+          <span class="item"> Terminal </span>
+          <span class="item"> Tool </span>
+          <span class="item"> Library </span>
+        </div>
+
+        <br />
 
         <div class="grid">
           <article>
@@ -166,26 +228,56 @@
               alt="landing page tazula"
               loading="lazy"
             />
-            <a>
-              <h1>Tazula</h1>
-            </a>
-            <p>Kuis, Absen, Kelas, semua dalam satu</p>
+            <a> Tazula </a>
+            <p>Manage kelas, absen, kuis dan penilaian</p>
             <div class="tags">
               <span>Web</span>
+              <span>API</span>
               <span>Fullstack</span>
             </div>
           </article>
 
           <article>
             <img
+              src="./images/perisai.PNG"
+              alt="contoh request yg kena rate limit"
+              loading="lazy"
+            />
+            <a href="https://github.com/Noblefel/perisai" target="_blank">
+              perisai
+            </a>
+            <p>super basic rate-limiter middleware</p>
+            <div class="tags">
+              <span>Library</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/vivi.PNG"
+              alt="contoh saat memilih beberapa pilihan didalam terminal"
+              loading="lazy"
+            />
+            <a href="https://github.com/Noblefel/vivi" target="_blank">
+              vivi
+            </a>
+            <p>beberapa helper buat mengambil input dari terminal</p>
+            <div class="tags">
+              <span>Library</span>
+              <span>Terminal</span>
+            </div>
+          </article>
+
+          <article>
+            <img
               src="./images/term-rpg.png"
-              alt="terminal screenshot of the game showing player's and enemy's hp during battle"
+              alt="tampilan terminal saat battle"
               loading="lazy"
             />
             <a href="https://github.com/Noblefel/term-rpg" target="_blank">
-              <h1>term-rpg</h1>
+              term-rpg
             </a>
-            <p>Simple terminal rpg game</p>
+            <p>simple terminal rpg game</p>
             <div class="tags">
               <span>Terminal</span>
             </div>
@@ -193,22 +285,20 @@
 
           <article>
             <div class="strip" style="background-color: firebrick">
-              <span>In Rework</span>
+              <span>Diperbaiki</span>
             </div>
             <img
               src="./images/Manortalk.jpg"
-              alt="screenshot of web app showing the search page and list of all the posts found"
+              alt="landing page"
               loading="lazy"
             />
             <a href="https://github.com/Noblefel/Manortalk" target="_blank">
-              <h1>ManorTalk</h1>
+              ManorTalk
             </a>
-            <p>
-              Blogging platform dengan queries, pagination, dan otentikasi
-              Oauth.
-            </p>
+            <p>Blogging platform</p>
             <div class="tags">
               <span>Web</span>
+              <span>API</span>
               <span>Fullstack</span>
             </div>
           </article>
@@ -216,11 +306,11 @@
           <article>
             <img
               src="./images/stove.jpg"
-              alt="image of a nicely formatted table in a pdf"
+              alt="tampilan pdf tabel dengan data-data dari csv"
               loading="lazy"
             />
             <a href="https://github.com/Noblefel/stove" target="_blank">
-              <h1>STOVE</h1>
+              STOVE
             </a>
             <p>Membuat tampilan tabel dari file csv</p>
             <div class="tags">
@@ -230,15 +320,47 @@
 
           <article>
             <img
+              src="./images/og.PNG"
+              alt="website Portofolio ini"
+              loading="lazy"
+            />
+            <a href="https://github.com/Noblefel/portfolio" target="_blank">
+              Personal Portofolio
+            </a>
+            <p>Website ini</p>
+            <div class="tags">
+              <span>Web</span>
+              <span>Static</span>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="./images/tanya-jawab.PNG"
+              alt="halaman cari pertanyaan"
+              loading="lazy"
+            />
+            <a href="https://github.com/Noblefel/portfolio" target="_blank">
+              Tanya jawab
+            </a>
+            <p>Aplikasi web untuk bertanya & menjawab</p>
+            <div class="tags">
+              <span>Web</span>
+              <span>Multi-page</span>
+            </div>
+          </article>
+
+          <article>
+            <img
               src="./images/InnOne.jpg"
-              alt="screenshot of web app showing the room description and checkout section"
+              alt="halaman salah satu room"
               loading="lazy"
             />
             <a
               href="https://github.com/Noblefel/InnOne-bookings-web-app"
               target="_blank"
             >
-              <h1>InnOne</h1>
+              InnOne
             </a>
             <p>Repositori saat belajar Go (web)</p>
             <div class="tags">
@@ -250,19 +372,16 @@
           <article>
             <img
               src="./images/contact-management.png"
-              alt="screenshot of formatted json response"
+              alt="tampilan data json"
               loading="lazy"
             />
             <a
               href="https://github.com/Noblefel/Rest-Api-Managemen-Kontak"
               target="_blank"
             >
-              <h1>Contact API (learning)</h1>
+              Contact API (learning)
             </a>
-            <p>
-              Repository saat belajar RESTful API. Serta in-memory storage yang
-              dibuat dari scratch
-            </p>
+            <p>Repository saat belajar RESTful API. Minim dependensi.</p>
             <div class="tags">
               <span>API</span>
             </div>
@@ -271,14 +390,14 @@
           <article>
             <img
               src="./images/pendaftaran-kursus.png"
-              alt="screenshot terminal di bagian menu utama simulasi"
+              alt="tampilan terminal di bagian menu"
               loading="lazy"
             />
             <a
               href="https://github.com/Noblefel/Simulasi-Pendaftaran-Kursus"
               target="_blank"
             >
-              <h1>Simulasi Pendaftaran Kursus</h1>
+              Simulasi Pendaftaran Kursus
             </a>
             <p>Proyek penilaian akhir matkul dasar pemrograman</p>
             <div class="tags">
@@ -291,14 +410,22 @@
       <main id="contact">
         <h1 style="text-align: center">Reach out to me 😃</h1>
         <div class="divider"></div>
+        <br />
 
         <div class="grid">
           <article>
-            <img src="./images/github.png" alt="github logo" class="circle" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/240px-Octicons-mark-github.svg.png"
+              alt="github logo"
+              class="circle"
+            />
             <a href="https://github.com/Noblefel" target="_blank">Noblefel</a>
           </article>
           <article>
-            <img src="./images/linkedin.png" alt="linkedin logo" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/240px-LinkedIn_icon.svg.png"
+              alt="linkedin logo"
+            />
             <a
               href="https://www.linkedin.com/in/abdullah-jibran/"
               target="_blank"
@@ -311,7 +438,11 @@
 
     <footer>
       <a href="https://github.com/Noblefel/portfolio" target="_blank">
-        <img src="./images/github.png" alt="github logo" width="50px" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/240px-Octicons-mark-github.svg.png"
+          alt="github logo"
+          width="50px"
+        />
       </a>
     </footer>
   </body>

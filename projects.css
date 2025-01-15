@@ -17,6 +17,31 @@
     &:hover {
       transform: rotate(2deg);
     }
+
+    p {
+      line-height: 1rem;
+    }
+  }
+
+  #filter {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 90vw;
+    overflow: auto;
+
+    .item {
+      cursor: pointer;
+      padding: 0.1rem 0.75rem;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .item.active {
+      border-color: steelblue;
+      color: steelblue;
+    }
   }
 
   img {
@@ -30,23 +55,21 @@
   a {
     text-decoration: none;
     color: inherit;
-    h1 {
-      margin: 0;
-    }
+    font-weight: 800;
+    font-size: 1.4rem;
   }
 
   .tags {
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
 
     span {
       background-color: steelblue;
-      padding: 0.2rem 0.5rem;
+      padding: 0.1rem 0.5rem;
       border-radius: 6px;
-      font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.8rem;
       letter-spacing: 1px;
       color: rgba(255, 255, 255, 0.9);
     }
@@ -57,11 +80,15 @@
     position: absolute;
     width: 200px;
     color: white;
-    font-weight: 500;
     rotate: 40deg;
     right: -2.5rem;
-    top: 2rem;
+    top: 1.5rem;
+    z-index: 2;
   }
+}
+
+body.dark #projects img {
+  filter: brightness(0.7);
 }
 
 @media screen and (max-width: 500px) {
