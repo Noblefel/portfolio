@@ -10,20 +10,20 @@
   img {
     background-color: white;
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 0.5rem auto;
     height: 100px;
     object-fit: contain;
     border-radius: 12px;
     border: 2px solid white;
-    
+
     &.circle {
       border-radius: 50%;
     }
   }
-  
+
   a {
     display: block;
     text-align: center;
-    font-size: clamp(1.2rem, calc(6vw), 2rem);
+    font-size: clamp(1rem, 6vw, 1.8rem);
   }
 }

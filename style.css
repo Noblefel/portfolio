@@ -1,13 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap");
 @import "./about.css";
 @import "./projects.css";
 @import "./contact.css";
+
+* {
+  box-sizing: border-box;
+}
 
 :root {
   font-size: 21px;
 }
 
 body {
+  --lighter: white;
+  color: rgba(0, 0, 0, 0.6);
+
   height: 100vh;
   font-family: "Patrick Hand SC", "Segoe Ui";
   background-size: 20px 40px;
@@ -21,23 +27,14 @@ body {
 }
 
 body.dark {
-  --bg: rgb(17, 22, 30);
-  background-color: var(--bg);
+  --lighter: color-mix(in srgb, black, steelblue 22%);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(17, 22, 30);
   background-image: unset;
-  color: rgba(255, 255, 255, 0.7);
-
-  article,
-  button,
-  nav.mobile {
-    background-color: color-mix(in srgb, var(--bg), steelblue 7%) !important;
-  }
-
-  button:not(.active) {
-    color: rgba(255, 255, 255, 0.5) !important;
-  }
 }
 
 a {
+  text-decoration: none;
   color: steelblue;
 }
 
@@ -58,25 +55,29 @@ p {
   margin: auto;
 }
 
-nav.desktop {
+nav {
+  width: fit-content;
   margin: auto;
   position: sticky;
   top: 1.5rem;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: fit-content;
 
   button {
-    padding: 1rem;
+    padding: 0.75rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    background-color: white;
+    background-color: var(--lighter);
+
     font-family: inherit;
     font-size: 0.9rem;
     letter-spacing: 0.75px;
     font-weight: 700;
-    color: rgba(0, 0, 0, 0.5);
+    color: inherit;
+
+    z-index: 5;
     cursor: pointer;
     transition: 0.2s ease-in-out transform;
 
@@ -89,61 +90,25 @@ nav.desktop {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transform: rotate(5deg);
     }
-
-    i {
-      font-size: 2rem;
-      display: block;
-    }
-  }
-}
-
-nav.mobile {
-  z-index: 5;
-  display: none;
-  padding: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
-
-  .flex {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-evenly;
   }
 
-  button {
-    cursor: pointer;
-    border: 0;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: 0.85rem;
-    color: rgba(0, 0, 0, 0.5);
-
-    &.active {
-      color: steelblue;
-    }
-
-    i {
-      font-size: 1.4rem;
-      display: block;
-    }
+  i {
+    font-size: 2rem !important;
+    inline-size: 100%;
   }
 }
 
 article {
   padding: 0.75rem;
   width: 100%;
-  background-color: white;
+  background-color: var(--lighter);
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  box-sizing: border-box;
 }
 
 .divider {
-  border-bottom: 5px dashed;
+  opacity: 0.25;
+  border-bottom: 8px dashed;
 }
 
 footer {
@@ -153,17 +118,44 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-  .layout > div,
-  nav.desktop {
-    display: none;
-  }
-
-  nav.mobile {
-    display: block;
-  }
-
   .layout {
     grid-template-columns: 1fr;
     padding: 0.5rem;
+  }
+
+  nav {
+    z-index: 5;
+    padding: 0.25rem 1rem 0.5rem 0.5rem;
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--lighter);
+
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+
+    button {
+      padding: 0;
+      border: 0;
+      font-size: 0.85rem;
+      line-height: 0.75rem;
+
+      &.active {
+        border: unset;
+      }
+
+      &:hover:not(.active) {
+        box-shadow: unset;
+        transform: unset;
+      }
+    }
+
+    i {
+      font-size: 1.4rem !important;
+    }
   }
 }

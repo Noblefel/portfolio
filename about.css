@@ -14,8 +14,15 @@
     }
   }
 
-  .history b {
-    color: steelblue;
+  .history {
+    p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    b {
+      color: steelblue;
+    }
   }
 
   .education {

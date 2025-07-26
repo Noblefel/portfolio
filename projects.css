@@ -30,6 +30,7 @@
     overflow: auto;
 
     .item {
+      background-color: var(--lighter);
       cursor: pointer;
       padding: 0.1rem 0.75rem;
       border: 2px solid rgba(0, 0, 0, 0.1);
@@ -53,7 +54,6 @@
   }
 
   a {
-    text-decoration: none;
     color: inherit;
     font-weight: 800;
     font-size: 1.4rem;
