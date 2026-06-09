@@ -23,7 +23,7 @@
 
   a {
     display: block;
-    text-align: center;
-    font-size: clamp(1rem, 6vw, 1.8rem);
+    text-align: center; 
+    font-size: 1.25rem;
   }
 }

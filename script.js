@@ -24,10 +24,10 @@ function setIcon() {
   });
 }
 
-const routes = document.querySelectorAll("[data-nav]");
+const links = document.querySelectorAll("[data-nav]");
 const pages = document.querySelectorAll("main");
 
-routes.forEach((e) => {
+links.forEach((e) => {
   e.addEventListener("click", () => {
     const to = e.getAttribute("data-nav") ?? "about";
     setPage(to);
@@ -38,13 +38,11 @@ function setPage(id) {
   pages.forEach((e) => {
     e.style.display = e.id == id ? "block" : "none";
   });
-
-  routes.forEach((e) => {
+  links.forEach((e) => {
     e.getAttribute("data-nav") == id
       ? e.classList.add("active")
       : e.classList.remove("active");
   });
-
   window.scrollTo(0, 0);
 }
 

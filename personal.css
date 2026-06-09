@@ -1,0 +1,39 @@
+#personal {
+  display: none;
+
+  img:first-of-type {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border-radius: 10px;
+  }
+
+  img:nth-of-type(2) {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  img:nth-of-type(3) {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid steelblue;
+  }
+
+  p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  p:not(:first-of-type) {
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+
+  .divider {
+    margin: 2rem 0 4rem 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
